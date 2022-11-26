@@ -1,0 +1,35 @@
+:root {
+  --columns-amount: 7;
+}
+
+.month-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-days-week,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 14.256%);
+  grid-column-gap: 2%;
+}
+
+.days div:hover {
+  background-color: #028e4a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.day-of-week {
+  text-align: center;
+  background-color: aqua;
+  font-size: 150%;
+}
+
+.day {
+  text-align: right;
+  background-color: aquamarine;
+  font-size: 150%;
+}
