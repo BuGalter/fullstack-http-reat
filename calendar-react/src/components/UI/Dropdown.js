@@ -1,10 +1,10 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import '../../styles/calendar.css';
 import '../../styles/dropdown.css';
 import CalendarButton from './CalendarButton';
 
 const Dropdown = ({ dropdownText, users }) => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(!open);
