@@ -1,6 +1,10 @@
-# Fullstack app api http nodejs and to-do list on React
+# Fullstack app api on http nodejs and To-Do list on React
 
 ## Структура проекта
+
+### Backend - содержиться в папке backend, там же храниться вся информация
+
+### Frontend - содержиться в папке calendar-react, там же храниться вся информация
 
 ## Authors
 
