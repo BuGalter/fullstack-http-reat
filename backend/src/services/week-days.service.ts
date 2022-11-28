@@ -1,4 +1,7 @@
-import { IWeekDaysRepository, } from '../repositories/week-days.repositry';
+import {
+  weekDaysRepository,
+  IWeekDaysRepository,
+} from '../repositories/week-days.repositry';
 
 export interface IWeekDaysService {
   weekDayRepository: IWeekDaysRepository[];
@@ -8,7 +11,7 @@ export interface IWeekDaysService {
 export class WeekDaysService implements IWeekDaysService {
   weekDayRepository: IWeekDaysRepository[];
 
-  constructor(weekDaysRepository: IWeekDaysRepository[]) {
+  constructor() {
     this.weekDayRepository = weekDaysRepository;
   }
 

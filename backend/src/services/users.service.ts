@@ -1,4 +1,5 @@
 import { User, } from '../models/User';
+import { userRepository, } from '../repositories/user.repository';
 
 export interface IUserService {
   userRepository: User[];
@@ -9,7 +10,7 @@ export interface IUserService {
 export class UserService implements IUserService {
   userRepository: User[];
 
-  constructor(userRepository: User[]) {
+  constructor() {
     this.userRepository = userRepository;
   }
 
