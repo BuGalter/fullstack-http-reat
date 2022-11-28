@@ -1,10 +1,10 @@
 import config from '../config/config';
-import { weekDaysHandler, } from '../handlers/week-days.handler';
+import { WeekDaysController, } from '../controllers/week-days.controller';
 
 export default [
   {
     method: 'GET',
     path: `${config.server.prefix}/weekdays`,
-    controller: weekDaysHandler,
+    controller: WeekDaysController.getAll,
   }
 ];

@@ -1,10 +1,10 @@
 import config from '../config/config';
-import { usersHandler, } from '../handlers/users.handler';
+import { UserController, } from '../controllers/users.controller';
 
 export default [
   {
     method: 'GET',
     path: `${config.server.prefix}/users`,
-    controller: usersHandler,
+    controller: UserController.getAll,
   }
 ];
