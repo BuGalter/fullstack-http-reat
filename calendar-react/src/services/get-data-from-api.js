@@ -1,16 +1,12 @@
-import { getYearNow } from './get-year';
-import { months } from './month-name';
-import { daysWeek } from './week-days-name';
+import { BASE_URL } from './constants';
 
-export const getDataFromApi = () => {
-  const year = getYearNow().toString();
-  //const url = `https://isdayoff.ru/api/getdata?year=${year}`;
-
-  const result ={
-    year,
-    daysWeek: daysWeek,
-    monthsInfo: months,
-  };
-
-  return result;
-};
+export const getDataFromApi = async (url) => {
+  const resultUrl = `${BASE_URL}${url}`;
+  let data = null;
+  const response = await fetch(resultUrl);
+  if (response.ok) {
+    data = await response.json();
+  }
+  
+  return data;
+}
