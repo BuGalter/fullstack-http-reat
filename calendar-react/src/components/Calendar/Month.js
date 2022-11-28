@@ -3,7 +3,7 @@ import Days from './Days';
 import MonthHeader from './MonthHeader';
 import NameDaysWeek from './NameDaysWeek';
 
-const Month = ({ year, daysWeek, monthInfo, indexKey, users }) => {
+const Month = ({ year, daysWeek, monthInfo, indexKey }) => {
   return (
     <div className='month'>
       <MonthHeader
